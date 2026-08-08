@@ -1,68 +1,128 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Zeynep Tekin | Data Scientist & AI Engineer</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <!-- FontAwesome 6+ CDN (İkonların kesin görünmesi için bunu head'e ekle) -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-        <style>
-            body { background-color: #fcfaf8 !important; }
-            h1, h2, h3 { color: #5d4037 !important; }
-            #main h2 { color: #5d4037 !important; border-bottom: 3px solid #ff9800 !important; padding-bottom: 5px; }
-            h3 { color: #5d4037 !important; border-bottom: 1px solid #ffcc80 !important; }
-            .button.primary { background-color: #ff9800 !important; color: white !important; }
-            
-            /* Footer İkonları */
-            #footer .icons a { color: #8d6e63 !important; font-size: 1.5em; margin: 0 10px; }
-            #footer .icons a:hover { color: #ff9800 !important; }
-        </style>
-    </head>
-    <body class="is-preload">
+    <head>
+        <title>Zeynep Tekin | Data Scientist & AI Engineer</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            /* 1. Genel Tema: Kahve ve Turuncu Vurgular */
+            body { background-color: #fcfaf8 !important; } /* Sayfa arka planı krem */
+            
+            /* Başlıklar -> Kahverengi */
+            h1, h2, h3 { color: #5d4037 !important; } 
 
-        <header id="header">
-            <div class="inner">
-                <a href="#" class="image avatar"><img src="images/zeyneptekin.png" alt="Zeynep Tekin" /></a>
-                <h1><strong>Zeynep Tekin</strong><br />Data Scientist | AI & ML Engineer</h1>
-            </div>
-        </header>
+            /* Ana Başlıklar (H2) -> Turuncu alt çizgili */
+            #main h2 {
+                color: #5d4037 !important;
+                border-bottom: 3px solid #ff9800 !important; /* Turuncu çizgi */
+                padding-bottom: 5px;
+            }
 
-        <div id="main">
-            <section id="one">
-                <h2>Professional Summary</h2>
-                <p>Data Scientist and AI Engineer. Published nearly 60 open-source AI models across GitHub, Hugging Face, and Kaggle.</p>
-                <ul class="actions">
-                    <li><a href="cv.pdf" target="_blank" class="button primary icon solid fa-download">Download My CV</a></li>
-                </ul>
-            </section>
+            /* H3 Başlıkları -> Turuncu vurgulu */
+            h3 { color: #5d4037 !important; border-bottom: 1px solid #ffcc80 !important; }
 
-            <section id="two">
-                <h2>Projects & Experience</h2>
-                <article>
-                    <h3>Data Science & AI Bootcamp</h3>
-                    <ul>
-                        <li>Developed nearly 60 open-source machine learning models.</li>
-                        <li>Solved complex analytical challenges on Kaggle.</li>
-                    </ul>
-                </article>
-            </section>
-        </div>
+            /* Kapak görseli çerçeve */
+            .hero-banner {
+                width: 100%;
+                max-height: 400px;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-bottom: 20px;
+                box-shadow: 0 4px 15px rgba(93, 64, 55, 0.2);
+            }
+            
+            /* Sol panel avatarı -> Kahve tonlarında çerçeve */
+            #header .image.avatar img {
+                border: 3px solid #d7ccc8;
+                box-shadow: 0 0 15px rgba(93, 64, 55, 0.3);
+            }
 
-        <footer id="footer">
-            <div class="inner">
-                <ul class="icons" style="list-style:none; display:flex; justify-content:center; padding:0;">
-                    <li><a href="https://github.com/ZeynepTekin-DS" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                    <!-- İkon burada: fa-hugging-face -->
-                    <li><a href="https://huggingface.co/zeynepptkn" target="_blank"><i class="fa-brands fa-hugging-face"></i></a></li>
-                    <li><a href="https://linkedin.com/in/zeynep-tekin520" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.kaggle.com/zynptkn06" target="_blank"><i class="fa-brands fa-kaggle"></i></a></li>
-                    <li><a href="mailto:zynptkn06@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                </ul>
-            </div>
-        </footer>
+            /* Butonlar -> Turuncu */
+            .button.primary { background-color: #ff9800 !important; color: white !important; }
+            .button.primary:hover { background-color: #f57c00 !important; }
 
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
+            /* Footer sosyal medya ikonlarını renklendir */
+            #footer .icons a { color: #8d6e63 !important; }
+            #footer .icons a:hover { color: #ff9800 !important; } /* Hover olduğunda turuncu */
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="image avatar"><img src="images/zeyneptekin.png" alt="Zeynep Tekin" /></a>
+                <h1><strong>Zeynep Tekin</strong><br />
+                Data Scientist | AI & Machine Learning Engineer</h1>
+            </div>
+        </header>
+
+        <div id="main">
+            <section style="padding: 20px 0 0 0; text-align: center;">
+                <img src="images/bg.png" alt="Data Science Banner" class="hero-banner" />
+            </section>
+
+            <section id="one">
+                <header class="major">
+                    <h2>Professional Summary</h2>
+                </header>
+                <p>Results-driven Data Scientist and AI Engineer with a strong multi-disciplinary academic background. Actively designed, developed, and published nearly 60 open-source AI models and data-driven projects across GitHub, Hugging Face, and Kaggle.</p>
+                <ul class="actions">
+                    <li><a href="cv.pdf" target="_blank" class="button primary icon solid fa-download">Download My CV</a></li>
+                </ul>
+            </section>
+
+            <section id="two">
+                <h2>Projects & Experience</h2>
+                <div class="row">
+                    <article class="col-12 work-item">
+                        <h3>Data Science & AI Bootcamp Projects</h3>
+                        <ul>
+                            <li>Published nearly 60 open-source ML models and repositories.</li>
+                            <li>Kaggle competitions and complex analytical challenges.</li>
+                            <li>Production-ready ML pipelines using Python, Pandas, and Scikit-Learn.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section id="three">
+                <h2>Education & Certificates</h2>
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>M.Sc. in Forensic Sciences</strong> | Hitit University</li>
+                    <li><strong>B.A. in Sociology (Honor)</strong> | Ankara Yıldırım Beyazıt Univ.</li>
+                </ul>
+                <h3>Target Roles & Technical Skills</h3>
+                <p><strong>Skills:</strong> Python, SQL, Machine Learning, Deep Learning, TensorFlow, NLP, Git, React</p>
+            </section>
+        </div>
+
+      <!-- Footer (Sosyal Medya Linkleri) -->
+<footer id="footer">
+    <div class="inner">
+        <ul class="icons">
+            <!-- GitHub için doğru kod: fa-github -->
+            <li><a href="https://github.com/ZeynepTekin-DS" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+            
+            <!-- Hugging Face için doğru kod: fa-hugging-face -->
+            <li><a href="https://huggingface.co/zeynepptkn" target="_blank" class="icon brands fa-hugging-face"><span class="label">Hugging Face</span></a></li>
+            
+            <li><a href="https://linkedin.com/in/zeynep-tekin520" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://www.kaggle.com/zynptkn06" target="_blank" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+            <li><a href="mailto:zynptkn06@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Zeynep Tekin</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+</footer>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.poptrox.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
