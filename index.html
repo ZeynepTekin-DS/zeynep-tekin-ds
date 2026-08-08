@@ -10,7 +10,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
-        <!-- FontAwesome CDN (İkonların görünmesi için garanti olsun) -->
+        <!-- FontAwesome CDN (İkonların garanti görünmesi için) -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
         <style>
             /* Genel Sayfa Arka Planı (Krem tonu) */
@@ -39,7 +39,7 @@
                 padding-bottom: 5px;
             }
 
-            /* Eğitim ve Sertifika Başlıkları (H3) -> Kahverengi ve Soft Çizgi */
+            /* Eğitim ve Sertifika Başlıkları (H3) */
             #three h3 {
                 color: #5d4037 !important;
                 border-bottom: 1px solid #ffcc80 !important;
@@ -69,6 +69,25 @@
             }
             #footer .icons a:hover { 
                 color: #ff9800 !important; 
+            }
+
+            /* Get In Touch içindeki sosyal medya liste tasarımı */
+            .contact-social-list {
+                list-style: none;
+                padding: 0;
+                margin-top: 15px;
+            }
+            .contact-social-list li {
+                margin-bottom: 10px;
+                font-size: 1.1em;
+            }
+            .contact-social-list a {
+                color: #5d4037;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+            .contact-social-list a:hover {
+                color: #ff9800;
             }
         </style>
     </head>
@@ -167,7 +186,7 @@
                         <h2>Get In Touch</h2>
                         <p>Feel free to reach out to me via email or check out my professional profiles below!</p>
                         <div class="row">
-                            <div class="col-4 col-12-small">
+                            <div class="col-12">
                                 <ul class="labeled-icons">
                                     <li>
                                         <h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
@@ -178,18 +197,25 @@
                                         <a href="mailto:zynptkn06@gmail.com">zynptkn06@gmail.com</a>
                                     </li>
                                 </ul>
+                                
+                                <!-- İstediğin Sosyal Medya İkonlu/Yazılı Liste Buraya Eklendi -->
+                                <ul class="contact-social-list">
+                                    <li><a href="https://github.com/ZeynepTekin-DS" target="_blank"><i class="fa-brands fa-github" style="width: 25px;"></i> <strong>GitHub:</strong> ZeynepTekin-DS</a></li>
+                                    <li><a href="https://huggingface.co/zeynepptkn" target="_blank"><i class="fa-solid fa-face-smile" style="width: 25px;"></i> <strong>Hugging Face:</strong> zeynepptkn</a></li>
+                                    <li><a href="https://linkedin.com/in/zeynep-tekin520" target="_blank"><i class="fa-brands fa-linkedin" style="width: 25px;"></i> <strong>LinkedIn:</strong> zeynep-tekin520</a></li>
+                                    <li><a href="https://www.kaggle.com/zynptkn06" target="_blank"><i class="fa-brands fa-kaggle" style="width: 25px;"></i> <strong>Kaggle:</strong> zynptkn06</a></li>
+                                </ul>
                             </div>
                         </div>
                     </section>
 
             </div>
 
-        <!-- Footer (Sosyal Medya Linkleri) - Tek ve Düzgün Hali -->
+        <!-- Footer (Sol Panel Altı Sosyal Medya İkonları) -->
             <footer id="footer">
                 <div class="inner">
                     <ul class="icons">
                         <li><a href="https://github.com/ZeynepTekin-DS" target="_blank" class="icon brands fa-github" title="Github"></a></li>
-                        <!-- Hugging Face İkonu (fa-hugging-face veya fa-face-smile) ve Linki -->
                         <li><a href="https://huggingface.co/zeynepptkn" target="_blank" class="icon brands fa-huggingface" title="Hugging Face"></a></li>
                         <li><a href="https://linkedin.com/in/zeynep-tekin520" target="_blank" class="icon brands fa-linkedin" title="LinkedIn"></a></li>
                         <li><a href="https://www.kaggle.com/zynptkn06" target="_blank" class="icon brands fa-kaggle" title="Kaggle"></a></li>
