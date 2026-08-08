@@ -21,14 +21,20 @@
                 box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             }
             
-            /* Ana Başlıklar (Mavi Tonu) */
+            /* Sol panel avatarını daha belirgin yap */
+            #header .image.avatar img {
+                border: 3px solid #87CEFA; /* Açık mavi çerçeve */
+                box-shadow: 0 0 15px rgba(135, 206, 250, 0.5);
+            }
+
+            /* Ana Başlıklar (H2) -> Mavi Tonu */
             #main h2 {
                 color: #1E90FF !important; /* Parlak Mavi */
                 border-bottom: 2px solid #87CEFA;
                 padding-bottom: 5px;
             }
 
-            /* Education ve Certificates Başlıkları (Mavi Tonu) */
+            /* Eğitim ve Sertifika Başlıkları (H3) -> Mavi Tonu */
             #three h3 {
                 color: #1E90FF !important;
                 border-bottom: 1px solid #87CEFA;
@@ -36,11 +42,21 @@
                 margin-top: 15px;
             }
 
-            /* Target Roles ve Technical Skills Başlığı (Yeşil Tonu) */
+            /* Target Roles ve Technical Skills Başlığı -> Yeşil Tonu */
             #three h3.skills-title {
                 color: #228B22 !important; /* Orman Yeşili */
                 border-bottom: 1px solid #90EE90;
             }
+
+            /* Footer sosyal medya ikonlarını renklendir */
+            #footer .icons a {
+                color: #888 !important; /* Normalde gri */
+                transition: color 0.3s ease;
+            }
+            #footer .icons a.fa-github:hover { color: #333 !important; }
+            #footer .icons a.fa-huggingface:hover { color: #FFD700 !important; } /* Hugging Face sarısı */
+            #footer .icons a.fa-linkedin:hover { color: #0077B5 !important; }
+            #footer .icons a.fa-kaggle:hover { color: #20BEFF !important; }
         </style>
     </head>
     <body class="is-preload">
@@ -48,7 +64,7 @@
         <!-- Header (Sol Taraf: Fotoğraf ve İsim) -->
             <header id="header">
                 <div class="inner">
-                    <!-- Sol taraftaki yuvarlak profil fotoğrafın -->
+                    <!-- Sol taraftaki YENİ YÜKLENEN yapay zeka temalı profil fotoğrafın -->
                     <a href="#" class="image avatar"><img src="images/zeyneptekin.png" alt="Zeynep Tekin" /></a>
                     <h1><strong>Zeynep Tekin</strong><br />
                     Data Scientist | AI & Machine Learning Engineer</h1>
@@ -72,7 +88,7 @@
                             Results-driven Data Scientist and AI Engineer with a strong multi-disciplinary academic background and hands-on expertise in Machine Learning, Deep Learning, and end-to-end data architectures. Actively designed, developed, and published nearly 60 open-source AI models and data-driven projects across GitHub, Hugging Face, and Kaggle.
                         </p>
                         <p>
-                            Passionlı about building scalable intelligent systems and seamlessly integrating modern web technologies into data-driven applications.
+                            Passionate about building scalable intelligent systems and seamlessly integrating modern web technologies into data-driven applications.
                         </p>
 
                         <ul class="actions" style="margin-top: 20px;">
@@ -129,6 +145,7 @@
 
                         <hr />
 
+                        <!-- Bu başlığın class'ını "skills-title" olarak ayarladım (CSS'te yeşil olması için) -->
                         <h3 class="skills-title">Target Roles & Technical Skills</h3>
                         <p><strong>Target Roles:</strong> Data Scientist, AI Engineer, ML Engineer, Data Analyst, Fullstack Dev</p>
                         <p><strong>Technical Skills:</strong> Python, SQL, Machine Learning, Deep Learning, TensorFlow, NLP, Git/GitHub, Kaggle, HTML5/CSS3, JavaScript, React, Bootstrap</p>
@@ -161,6 +178,7 @@
                 <div class="inner">
                     <ul class="icons">
                         <li><a href="https://github.com/ZeynepTekin-DS" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                        <!-- HUGGING FACE LİNKİNİ BURAYA EKLEDİM -->
                         <li><a href="https://huggingface.co/zeynepptkn" target="_blank" class="icon brands fa-huggingface"><span class="label">Hugging Face</span></a></li>
                         <li><a href="https://linkedin.com/in/zeynep-tekin520" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
                         <li><a href="https://www.kaggle.com/zynptkn06" target="_blank" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
