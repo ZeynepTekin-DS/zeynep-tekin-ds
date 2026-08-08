@@ -20,11 +20,50 @@
                 margin-bottom: 20px;
                 box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             }
-            /* Başlıkları kahverengi ve uyumlu tonlara getiren özel stil */
-            #main h2, #main h3 {
-                color: #8D5B4C !important;
-                border-bottom: 2px solid #D4A373;
+            
+            /* Sol panel avatarı */
+            #header .image.avatar img {
+                border: 3px solid #d7ccc8;
+                box-shadow: 0 0 15px rgba(93, 64, 55, 0.3);
+            }
+
+            /* Ana Başlıklar (H2) -> Kahverengi ve Turuncu Çizgi */
+            #main h2 {
+                color: #5d4037 !important;
+                border-bottom: 3px solid #ff9800 !important;
                 padding-bottom: 5px;
+            }
+
+            /* Eğitim ve Sertifika Başlıkları (H3) */
+            #three h3 {
+                color: #5d4037 !important;
+                border-bottom: 1px solid #ffcc80 !important;
+                padding-bottom: 3px;
+                margin-top: 15px;
+            }
+
+            /* Target Roles ve Technical Skills Başlığı */
+            #three h3.skills-title {
+                color: #5d4037 !important;
+                border-bottom: 1px solid #ffcc80 !important;
+            }
+
+            /* Butonlar -> Turuncu */
+            .button.primary { 
+                background-color: #ff9800 !important; 
+                color: white !important; 
+            }
+            .button.primary:hover { 
+                background-color: #f57c00 !important; 
+            }
+
+            /* Footer sosyal medya ikonlarını renklendir */
+            #footer .icons a {
+                color: #8d6e63 !important;
+                transition: color 0.3s ease;
+            }
+            #footer .icons a:hover { 
+                color: #ff9800 !important; 
             }
         </style>
     </head>
@@ -33,7 +72,6 @@
         <!-- Header (Sol Taraf: Fotoğraf ve İsim) -->
             <header id="header">
                 <div class="inner">
-                    <!-- Sol taraftaki yuvarlak profil fotoğrafın -->
                     <a href="#" class="image avatar"><img src="images/zeyneptekin.png" alt="Zeynep Tekin" /></a>
                     <h1><strong>Zeynep Tekin</strong><br />
                     Data Scientist | AI & Machine Learning Engineer</h1>
@@ -114,7 +152,7 @@
 
                         <hr />
 
-                        <h3>Target Roles & Technical Skills</h3>
+                        <h3 class="skills-title">Target Roles & Technical Skills</h3>
                         <p><strong>Target Roles:</strong> Data Scientist, AI Engineer, ML Engineer, Data Analyst, Fullstack Dev</p>
                         <p><strong>Technical Skills:</strong> Python, SQL, Machine Learning, Deep Learning, TensorFlow, NLP, Git/GitHub, Kaggle, HTML5/CSS3, JavaScript, React, Bootstrap</p>
                     </section>
@@ -146,7 +184,7 @@
                 <div class="inner">
                     <ul class="icons">
                         <li><a href="https://github.com/ZeynepTekin-DS" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                        <li><a href="https://huggingface.co/ZeynepTekin-DS" target="_blank" class="icon brands fa-huggingface"><span class="label">Hugging Face</span></a></li>
+                        <li><a href="https://huggingface.co/zeynepptkn" target="_blank" class="icon brands fa-huggingface" title="Hugging Face"><span class="label">Hugging Face</span></a></li>
                         <li><a href="https://linkedin.com/in/zeynep-tekin520" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
                         <li><a href="https://www.kaggle.com/zynptkn06" target="_blank" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
                         <li><a href="mailto:zynptkn06@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
@@ -160,4 +198,10 @@
         <!-- Scripts -->
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/js/jquery.poptrox.min.js"></script>
-            <script src="assets/js/browser.min.js">&#8203;
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
