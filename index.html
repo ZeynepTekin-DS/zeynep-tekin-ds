@@ -7,24 +7,26 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
         <style>
-            body { background-color: #f5efe6 !important; }
+            /* Arka plan modern açık gri tonunda */
+            body { background-color: #f4f6f8 !important; }
             
-            /* Üst Sabit Menü Tasarımı */
+            /* Üst Sabit Menü: Antrasit arka plan ve sağa yaslı tasarım */
             .top-navbar {
                 position: fixed;
                 top: 0;
                 left: 0;
                 width: 100%;
-                background-color: rgba(62, 39, 35, 0.95);
-                padding: 12px 0;
-                text-align: center;
+                background-color: #212529;
+                padding: 12px 30px;
+                text-align: right;
                 z-index: 1000;
                 box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+                box-sizing: border-box;
             }
             .top-navbar a {
-                color: #d7ccc8;
+                color: #e2e8f0;
                 text-decoration: none;
-                margin: 0 15px;
+                margin-left: 25px;
                 font-weight: bold;
                 font-size: 0.95em;
                 transition: color 0.3s;
@@ -55,9 +57,9 @@
             
             /* Yüzsüz/Varsayılan Avatar Tasarımı */
             #header .image.avatar {
-                background-color: #d7ccc8;
-                border: 3px solid #d7ccc8;
-                box-shadow: 0 0 15px rgba(93, 64, 55, 0.3);
+                background-color: #e2e8f0;
+                border: 3px solid #cbd5e1;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
@@ -67,35 +69,35 @@
             }
             #header .image.avatar i {
                 font-size: 60px;
-                color: #5d4037;
+                color: #334155;
             }
             
             #main h2 {
-                color: #5d4037 !important;
+                color: #1e293b !important;
                 border-bottom: 2px solid #ff9800 !important;
                 padding-bottom: 5px;
             }
             #two h3, #three h3, #three h3.skills-title {
-                color: #5d4037 !important;
+                color: #1e293b !important;
                 border-bottom: 1px solid #ff9800 !important;
                 padding-bottom: 3px;
                 margin-top: 15px;
             }
 
             .button.primary { 
-                background-color: #d7ccc8 !important; 
-                color: #3e2723 !important; 
+                background-color: #334155 !important; 
+                color: #ffffff !important; 
                 border: none !important;
                 box-shadow: none !important;
                 font-weight: bold;
             }
             .button.primary:hover { 
-                background-color: #bcaaa4 !important; 
-                color: #3e2723 !important;
+                background-color: #1e293b !important; 
+                color: #ffffff !important;
             }
 
             #footer .icons a {
-                color: #d7ccc8 !important;
+                color: #cbd5e1 !important;
                 transition: color 0.3s ease;
             }
             #footer .icons a:hover { 
@@ -112,7 +114,7 @@
                 font-size: 1.1em;
             }
             .contact-social-list a {
-                color: #5d4037;
+                color: #334155;
                 text-decoration: none;
                 transition: color 0.3s;
             }
@@ -123,11 +125,10 @@
     </head>
     <body class="is-preload">
 
-        <!-- Üst Menü -->
+        <!-- Üst Menü (Sağa Yaslı ve Antrasit) -->
         <nav class="top-navbar">
             <a href="#one">About</a>
             <a href="#two">Projects</a>
-            <a href="#three">Education</a>
             <a href="#four">Contact</a>
         </nav>
 
