@@ -7,8 +7,37 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
         <style>
-            body { background-color: #fcfaf8 !important; }
+            body { background-color: #f5efe6 !important; }
             
+            /* Üst Sabit Menü Tasarımı */
+            .top-navbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(62, 39, 35, 0.95);
+                padding: 12px 0;
+                text-align: center;
+                z-index: 1000;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            }
+            .top-navbar a {
+                color: #d7ccc8;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+                font-size: 0.95em;
+                transition: color 0.3s;
+            }
+            .top-navbar a:hover {
+                color: #ff9800;
+            }
+
+            /* Sayfa içeriği üst menünün altında kalmasın diye üst boşluk */
+            body {
+                padding-top: 40px;
+            }
+
             #header {
                 background: linear-gradient(rgba(20, 16, 14, 0.70), rgba(15, 12, 10, 0.82)), url('https://media.licdn.com/dms/image/v2/D4D12AQG50az1-f9YWg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1722015283856?e=2147483647&v=beta&t=1ERfLxY4ZdvfkwlKYZW5kypVTkgqTmiRrmcy6i6lq4s') !important;
                 background-size: cover !important;
@@ -24,9 +53,22 @@
                 margin-bottom: 20px;
                 box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             }
-            #header .image.avatar img {
+            
+            /* Yüzsüz/Varsayılan Avatar Tasarımı */
+            #header .image.avatar {
+                background-color: #d7ccc8;
                 border: 3px solid #d7ccc8;
                 box-shadow: 0 0 15px rgba(93, 64, 55, 0.3);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 120px;
+                height: 120px;
+                border-radius: 100%;
+            }
+            #header .image.avatar i {
+                font-size: 60px;
+                color: #5d4037;
             }
             
             #main h2 {
@@ -82,9 +124,20 @@
     </head>
     <body class="is-preload">
 
+        <!-- Üst Menü -->
+        <nav class="top-navbar">
+            <a href="#one">About</a>
+            <a href="#two">Projects</a>
+            <a href="#three">Education</a>
+            <a href="#four">Contact</a>
+        </nav>
+
         <header id="header">
             <div class="inner">
-                <a href="#" class="image avatar"><img src="images/zeyneptekin.png" alt="Zeynep Tekin" /></a>
+                <!-- Yüzsüz Avatar Alanı -->
+                <span class="image avatar">
+                    <i class="fa-solid fa-user"></i>
+                </span>
                 <h1><strong>Zeynep Tekin</strong><br />
                 Data Scientist | AI & Machine Learning Engineer</h1>
             </div>
@@ -106,8 +159,7 @@
                     Passionate about building scalable intelligent systems and seamlessly integrating modern web technologies into data-driven applications.
                 </p>
                 <ul class="actions" style="margin-top: 20px;">
-                    <!-- Ham GitHub Bağlantısı ile Kesin Çözüm -->
-                    <li><a href="https://raw.githubusercontent.com/ZeynepTekin-DS/zeynep-tekin-ds/main/ZeynepTekincv.pdf" target="_blank" class="button primary icon solid fa-download">Download My CV</a></li>
+                    <li><a href="ZeynepTekincv.pdf" target="_blank" class="button primary icon solid fa-download">Download My CV</a></li>
                 </ul>
             </section>
 
@@ -128,7 +180,7 @@
                         <p><strong>Complete Applied Web Development</strong></p>
                         <ul>
                             <li>Built responsive web interfaces using HTML5, CSS3, Bootstrap, and JavaScript.</li>
-                            <li>Developed modern component-based applications utilizing React.</li>
+                            <li>Developed modern component-based applications utilizing React and managed databases with SQL.</li>
                         </ul>
                     </article>
                 </div>
