@@ -10,9 +10,9 @@
             /* Arka plan orta gri tonunda */
             body { background-color: #d1d5db !important; }
             
-            /* Sayfadaki tüm ana yazı renklerini koyu ve belirgin yaptık */
-            body, p, ul li, ol li {
-                color: #1e293b !important;
+            /* Sayfadaki TÜM ana yazıları, paragrafları ve listeleri kapkara/çok net yaptık */
+            body, p, span, li, strong, b {
+                color: #111827 !important;
             }
 
             /* Üst Sabit Menü: Antrasit arka plan ve sağa yaslı tasarım */
@@ -29,7 +29,7 @@
                 box-sizing: border-box;
             }
             .top-navbar a {
-                color: #e2e8f0;
+                color: #e2e8f0 !important;
                 text-decoration: none;
                 margin-left: 25px;
                 font-weight: bold;
@@ -37,7 +37,7 @@
                 transition: color 0.3s;
             }
             .top-navbar a:hover {
-                color: #ff9800;
+                color: #ff9800 !important;
             }
 
             body {
@@ -49,6 +49,11 @@
                 background-size: cover !important;
                 background-position: center !important;
                 background-repeat: no-repeat !important;
+            }
+
+            /* Header içindeki isim ve unvan beyaz kalsın ki okunsun */
+            #header h1, #header h1 strong, #header p {
+                color: #ffffff !important;
             }
 
             .hero-banner {
@@ -117,16 +122,15 @@
             .contact-social-list li {
                 margin-bottom: 10px;
                 font-size: 1.1em;
-                color: #1e293b !important;
             }
             .contact-social-list a {
-                color: #1e293b;
+                color: #111827 !important;
                 text-decoration: none;
                 transition: color 0.3s;
                 font-weight: 500;
             }
             .contact-social-list a:hover {
-                color: #ff9800;
+                color: #ff9800 !important;
             }
         </style>
     </head>
